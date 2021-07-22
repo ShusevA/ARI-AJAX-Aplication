@@ -1,1 +1,1 @@
-# ARI-AJAX-Aplication
+# ARI-AJAX-Application

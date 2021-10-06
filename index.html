@@ -1,0 +1,885 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem Shop</title>
+    <link rel="stylesheet" href="./scss/iconsfonts.css">
+    <link rel="preload" as="font"
+        href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css"
+        crossorigin>
+    <noscript>
+        <link rel="stylesheet"
+            href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
+    </noscript>
+    <link rel="stylesheet" href="./scss/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="nav" id="nav-fixed">
+            <div class="nav-main">
+                <button class="smart-menu" type="button" data-target="#navbar" aria-controls="navbar"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+                <a class="logo" href="#" aria-current="page" aria-label="Home page.">Lorem.</a>
+                <div class="nav-contaner" id="navbar">
+                    <ul class="nav-content" aria-label="Main menu">
+                        <li class="nav-item">
+                            <button class="button" id="navbarDropdown" type="button" data-toggle="dropdown"
+                                aria-expanded="false" aria-label="View category.">Products
+                                <i class="_icon-line"></i>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li class="dropdown-item">
+                                    <a class="dropdown-linck" href="#">Action</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <button class="button" id="navbarDropdown2" type="button" data-toggle="dropdown"
+                                aria-expanded="false" aria-label="View category.">Rooms
+                                <i class="_icon-line"></i>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <li class="dropdown-item active">
+                                    <a class="dropdown-linck" href="#">Something else here</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="View category.">Inspirations</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-asside">
+                <ul class="customer-menu" aria-label="Сustomer menu.">
+                    <li class="item">
+                        <a class="menu-link wishlist popup" href="#" aria-label="Liked product.">
+                            <i class="_icon-heartblack"></i>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="menu-link cart popup" href="#" aria-label="Cart">
+                            <i class="_icon-cart"></i>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="menu-link profile popup" href="#" aria-label="Profile">
+                            <img class="my-profile" src="./images/profile.jpg" alt="My profile" decoding="async.">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="promotion">
+        <div class="contaner">
+            <div class="content">
+                <h1 class="headlines">High-Quality Furniture Just For You</h1>
+                <div class="text">
+                    Our furniture is made from selected and best quality materials that are suitable for
+                    your dream home
+                </div>
+                <div class="button-link">
+                    <a href="#">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="feature">
+        <div class="offer reward">
+            <i class="_icon-roward" role="presentation" aria-labelledby="roward-header"></i>
+            <div class="important-text" id="roward-header">High Quality</div>
+            <p class="description-text description">crafted from top materials</p>
+        </div>
+        <div class="offer verified">
+            <i class="_icon-verifiend" role="presentation" aria-labelledby="verifiend-header"></i>
+            <div class="important-text" id="verifiend-header">Warrany Protection</div>
+            <p class="description-text description">Over 2 years</p>
+        </div>
+        <div class="offer delivery">
+            <i class="_icon-delivery" role="presentation" aria-labelledby="delivery-header"></i>
+            <div class="important-text" id="delivery-header">Free Shipping</div>
+            <p class="description-text description">Order over 150 $</p>
+        </div>
+        <div class="offer support">
+            <i class="_icon-support" role="presentation" aria-labelledby="support-header"></i>
+            <div class="important-text" id="support-header">24 / 7 Support</div>
+            <p class="description-text description">Dedicated support</p>
+        </div>
+    </div>
+
+    <section class="product">
+        <h2 class="headlines">Our Products</h2>
+        <div class="products">
+            <div class="card">
+                <div class="card-img">
+                    <picture>
+                        <source class="lazy" type="image/webp" width="250" height="264" media="(max-width: 335px)"
+                            srcset="./images/product/table-small@w1.gif 1x, ./images/product/table-small@w2.gif 2x"
+                            data-srcset="./images/product/table-small@w1.webp 1x, ./images/product/table-small@w2.webp 2x">
+                        <source class="lazy" type="image/jpeg" width="250" height="264" media="(max-width: 335px)"
+                            srcset="./images/product/table-small.gif 1x, ./images/product/table-small@2.gif 2x"
+                            data-srcset="./images/product/table-small.jpg 1x, ./images/product/table-small@2.jpg 2x">
+                        <source class="lazy" type="image/webp" width="285" height="301"
+                            srcset="./images/product/table@w1.gif 1x, ./images/product/table@w2.gif 2x"
+                            data-srcset="./images/product/table@w1.webp 1x, ./images/product/table@w2.webp 2x">
+                        <source class="lazy" type="image/jpeg" width="285" height="301"
+                            srcset="./images/product/table.gif 1x, ./images/product/table@2.gif 2x"
+                            data-srcset="./images/product/table.jpg 1x, ./images/product/table@2.jpg 2x">
+                        <img loading="lazy" class="lazy" width="285" height="301" src="./images/product/table.gif"
+                            data-src="./images/product/table.jpg" alt="Table.">
+                    </picture>
+                </div>
+                <div class="card-data">
+                    <h3 class="headlines">Syltherine</h3>
+                    <p class="description">Stylish cafe chair</p>
+                    <span class="spashil-price">Rp 2.500.000</span>
+                    <span class="normal-price">Rp 3.500.000</span>
+                </div>
+                <div class="deteils">
+                    <div class="deteils-block">
+                        <button class="deteils-btn" type="button">Add to cart</button>
+                        <ul class="deteils-action">
+                            <li>
+                                <a class="share" href="#" aria-label="If you liked">
+                                    <i class="_icon-share"></i>
+                                    Share
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="like" aria-label="Mark as">
+                                    <i class="_icon-heart"></i>
+                                    Like
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <picture>
+                        <source class="lazy" type="image/webp" width="250" height="265" media="(max-width: 335px)"
+                            srcset="./images/product/chair-small@w1.gif 1x, ./images/product/chair-small@w2.gif 2x"
+                            data-srcset="./images/product/chair-small@w1.webp 1x, ./images/product/chair-small@w2.webp 2x">
+                        <source class="lazy" type="image/jpeg" width="250" height="265" media="(max-width: 335px)"
+                            srcset="./images/product/chair-small.gif 1x, ./images/product/chair-small@2.gif 2x"
+                            data-srcset="./images/product/chair-small.jpg 1x, ./images/product/chair-small@2.jpg 2x">
+                        <source class="lazy" type="image/webp" width="284" height="301"
+                            srcset="./images/product/chair@w1.gif 1x, ./images/product/chair@w2.gif 2x"
+                            data-srcset="./images/product/chair@w1.webp 1x, ./images/product/chair@w2.webp 2x">
+                        <source class="lazy" type="image/jpeg" width="284" height="301"
+                            srcset="./images/product/chair.gif 1x, ./images/product/chair@2.gif 2x"
+                            data-srcset="./images/product/chair.jpg 1x, ./images/product/chair@2.jpg 2x">
+                        <img loading="lazy" class="lazy" width="284" height="301" src="./images/product/chair.gif"
+                            data-src="./images/product/chair.jpg" alt="Chair.">
+                    </picture>
+                </div>
+                <div class="card-data">
+                    <h3 class="headlines">Leviosa</h3>
+                    <p class="description">Stylish cafe chair</p>
+                    <span class="spashil-price">Rp 2.500.000</span>
+                    <span class="normal-price"></span>
+                </div>
+                <div class="deteils">
+                    <div class="deteils-block">
+                        <button class="deteils-btn " type="button">Add to cart</button>
+                        <ul class="deteils-action">
+                            <li>
+                                <a class="share" href="#" aria-label="If you liked">
+                                    <i class="_icon-share"></i>
+                                    Share</a>
+                            </li>
+                            <li>
+                                <a href="#" class="like" aria-label="Mark as">
+                                    <i class="_icon-heart"></i>
+                                    Like</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <picture>
+                        <source class="lazy" type="image/webp" width="250" height="264" media="(max-width: 335px)"
+                            srcset="./images/product/sofa-small@w1.gif 1x, ./images/product/sofa-small@w2.gif 2x"
+                            data-srcset="./images/product/sofa-small@w1.webp 1x, ./images/product/sofa-small@w2.webp 2x">
+                        <source class="lazy" type="image/jpeg" width="250" height="264" media="(max-width: 335px)"
+                            srcset="./images/product/sofa-small.gif 1x, ./images/product/sofa-small@2.gif 2x"
+                            data-srcset="./images/product/sofa-small.jpg 1x, ./images/product/sofa-small@2.jpg 2x">
+                        <source class="lazy" type="image/webp" width="285" height="301"
+                            srcset="./images/product/sofa@w1.gif 1x, ./images/product/sofa@w2.gif 2x"
+                            data-srcset="./images/product/sofa@w1.webp 1x, ./images/product/sofa@w2.webp 2x">
+                        <source class="lazy" type="image/jpeg" width="285" height="301"
+                            srcset="./images/product/sofa.gif 1x, ./images/product/sofa@2.gif 2x"
+                            data-srcset="./images/product/sofa.jpg 1x, ./images/product/sofa@2.jpg 2x">
+                        <img loading="lazy" class="lazy" width="285" height="301" src="./images/product/sofa.gif"
+                            data-src="./images/product/sofa.jpg" alt="Sofa.">
+                    </picture>
+                </div>
+                <div class="card-data">
+                    <h3 class="headlines">Lolito</h3>
+                    <p class="description">Luxury big sofa</p>
+                    <span class="spashil-price">Rp 7.000.000</span>
+                    <span class="normal-price">Rp 14.000.000</span>
+                </div>
+                <div class="deteils">
+                    <div class="deteils-block">
+                        <button class="deteils-btn " type="button">Add to cart</button>
+                        <ul class="deteils-action">
+                            <li>
+                                <a class="share" href="#" aria-label="If you liked">
+                                    <i class="_icon-share"></i>
+                                    Share</a>
+                            </li>
+                            <li>
+                                <a href="#" class="like" aria-label="Mark as">
+                                    <i class="_icon-heart"></i>
+                                    Like</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <picture>
+                        <source class="lazy" type="image/webp" width="250" height="264" media="(max-width: 335px)"
+                            srcset="./images/product/fan-small@w1.gif 1x, ./images/product/fan-small@w2.gif 2x"
+                            data-srcset="./images/product/fan-small@w1.webp 1x, ./images/product/fan-small@w2.webp 2x">
+                        <source class="lazy" type="image/jpeg" width="250" height="264" media="(max-width: 335px)"
+                            srcset="./images/product/fan-small.gif 1x, ./images/product/fan-small@2.gif 2x"
+                            data-srcset="./images/product/fan-small.jpg 1x, ./images/product/fan-small@2.jpg 2x">
+                        <source class="lazy" type="image/webp" width="285" height="301"
+                            srcset="./images/product/fan@w1.gif 1x, ./images/product/fan@w2.gif 2x"
+                            data-srcset="./images/product/fan@w1.webp 1x, ./images/product/fan@w2.webp 2x">
+                        <source class="lazy" type="image/jpeg" width="285" height="301"
+                            srcset="./images/product/fan.gif 1x, ./images/product/fan@2.gif 2x"
+                            data-srcset="./images/product/fan.jpg 1x, ./images/product/fan@2.jpg 2x">
+                        <img loading="lazy" class="lazy" width="285" height="301" src="./images/product/fan.gif"
+                            data-src="./images/product/fan.jpg" alt="Fan.">
+                    </picture>
+                </div>
+                <div class="card-data">
+                    <h3 class="headlines">Respira</h3>
+                    <p class="description">Minimalist fan</p>
+                    <span class="spashil-price">Rp 500.000</span>
+                    <span class="normal-price"></span>
+                </div>
+                <div class="deteils">
+                    <div class="deteils-block">
+                        <button class="deteils-btn " type="button">Add to cart</button>
+                        <ul class="deteils-action">
+                            <li>
+                                <a class="share" href="#" aria-label="If you liked">
+                                    <i class="_icon-share"></i>
+                                    Share</a>
+                            </li>
+                            <li>
+                                <a href="" class="like" aria-label="Mark as">
+                                    <i class="_icon-heart"></i>
+                                    Like</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <picture>
+                        <source class="lazy" type="image/webp" width="250" height="264" media="(max-width: 335px)"
+                            srcset="./images/product/floor-lamp-small@w1.gif 1x, ./images/product/floor-lamp-small@w2.gif 2x"
+                            data-srcset="./images/product/floor-lamp-small@w1.webp 1x, ./images/product/floor-lamp-small@w2.webp 2x">
+                        <source class="lazy" type="image/jpeg" width="250" height="264" media="(max-width: 335px)"
+                            srcset="./images/product/floor-lamp-small.gif 1x, ./images/product/floor-lamp-small@2.gif 2x"
+                            data-srcset="./images/product/floor-lamp-small.jpg 1x, ./images/product/floor-lamp-small@2.jpg 2x">
+                        <source class="lazy" type="image/webp" width="285" height="301"
+                            srcset="./images/product/floor-lamp@w1.gif 1x, ./images/product/floor-lamp@w2.gif 2x"
+                            data-srcset="./images/product/floor-lamp@w1.webp 1x, ./images/product/floor-lamp@w2.webp 2x">
+                        <source class="lazy" type="image/jpeg" width="285" height="301"
+                            srcset="./images/product/floor-lamp.gif 1x, ./images/product/floor-lamp@2.gif 2x"
+                            data-srcset="./images/product/floor-lamp.jpg 1x, ./images/product/floor-lamp@2.jpg 2x">
+                        <img loading="lazy" class="lazy" width="285" height="301" src="./images/product/floor-lamp.gif"
+                            data-src="./images/product/floor-lamp.jpg" alt="Floor Lamp.">
+                    </picture>
+                </div>
+                <div class="card-data">
+                    <h3 class="headlines">Grifo</h3>
+                    <p class="description">Night lamp</p>
+                    <span class="spashil-price">Rp 1.500.000</span>
+                    <span class="normal-price"></span>
+                </div>
+                <div class="deteils">
+                    <div class="deteils-block">
+                        <button class="deteils-btn " type="button">Add to cart</button>
+                        <ul class="deteils-action">
+                            <li>
+                                <a class="share" href="#" aria-label="If you liked">
+                                    <i class="_icon-share"></i>
+                                    Share</a>
+                            </li>
+                            <li>
+                                <a href="#" class="like" aria-label="Mark as">
+                                    <i class="_icon-heart"></i>
+                                    Like</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <picture>
+                        <source class="lazy" type="image/webp" width="250" height="264" media="(max-width: 335px)"
+                            srcset="./images/product/cup-small@w1.gif 1x, ./images/product/cup-small@w2.gif 2x"
+                            data-srcset="./images/product/cup-small@w1.webp 1x, ./images/product/cup-small@w2.webp 2x">
+                        <source class="lazy" type="image/jpeg" width="250" height="264" media="(max-width: 335px)"
+                            srcset="./images/product/cup-small.gif 1x, ./images/product/cup-small@2.gif 2x"
+                            data-srcset="./images/product/cup-small.jpg 1x, ./images/product/cup-small@2.jpg 2x">
+                        <source class="lazy" type="image/webp" width="285" height="301"
+                            srcset="./images/product/cup@w1.gif 1x, ./images/product/cup@w2.gif 2x"
+                            data-srcset="./images/product/cup@w1.webp 1x, ./images/product/cup@w2.webp 2x">
+                        <source class="lazy" type="image/jpeg" width="285" height="301"
+                            srcset="./images/product/cup.gif 1x, ./images/product/cup@2.gif 2x"
+                            data-srcset="./images/product/cup.jpg 1x, ./images/product/cup@2.jpg 2x">
+                        <img loading="lazy" class="lazy" width="285" height="301" src="./images/product/cup.gif"
+                            data-src="./images/product/cup.jpg" alt="Cup.">
+                    </picture>
+                </div>
+                <div class="card-data">
+                    <h3 class="headlines">Muggo</h3>
+                    <p class="description">Small mug</p>
+                    <span class="spashil-price">Rp 150.000</span>
+                    <span class="normal-price"></span>
+                </div>
+                <div class="deteils">
+                    <div class="deteils-block">
+                        <button class="deteils-btn " type="button">Add to cart</button>
+                        <ul class="deteils-action">
+                            <li>
+                                <a class="share" href="#" aria-label="If you liked">
+                                    <i class="_icon-share"></i>
+                                    Share</a>
+                            </li>
+                            <li>
+                                <a href="#" class="like" aria-label="Mark as">
+                                    <i class="_icon-heart"></i>
+                                    Like</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <picture>
+                        <source class="lazy" type="image/webp" width="250" height="264" media="(max-width: 335px)"
+                            srcset="./images/product/bedclothes-small@w1.gif 1x, ./images/product/bedclothes-small@w2.gif 2x"
+                            data-srcset="./images/product/bedclothes-small@w1.webp 1x, ./images/product/bedclothes-small@w2.webp 2x">
+                        <source class="lazy" type="image/jpeg" width="250" height="264" media="(max-width: 335px)"
+                            srcset="./images/product/bedclothes-small.gif 1x, ./images/product/bedclothes-small@2.gif 2x"
+                            data-srcset="./images/product/bedclothes-small.jpg 1x, ./images/product/bedclothes-small@2.jpg 2x">
+                        <source class="lazy" type="image/webp" width="285" height="301"
+                            srcset="./images/product/bedclothes@w1.gif 1x, ./images/product/bedclothes@w2.gif 2x"
+                            data-srcset="./images/product/bedclothes@w1.webp 1x, ./images/product/bedclothes@w2.webp 2x">
+                        <source class="lazy" type="image/jpeg" width="285" height="301"
+                            srcset="./images/product/bedclothes.gif 1x, ./images/product/bedclothes@2.gif 2x"
+                            data-srcset="./images/product/bedclothes.jpg 1x, ./images/product/bedclothes@2.jpg 2x">
+                        <img loading="lazy" class="lazy" width="285" height="301" src="./images/product/bedclothes.gif"
+                            data-src="./images/product/bedclothes.jpg" alt="Bedclothes.">
+                    </picture>
+                </div>
+                <div class="card-data">
+                    <h3 class="headlines">Pingky</h3>
+                    <p class="description">Cute bed set</p>
+                    <span class="spashil-price">Rp 7.000.000</span>
+                    <span class="normal-price">Rp 7.000.000</span>
+                </div>
+                <div class="deteils">
+                    <div class="deteils-block">
+                        <button class="deteils-btn " type="button">Add to cart</button>
+                        <ul class="deteils-action">
+                            <li>
+                                <a class="share" href="#" aria-label="If you liked">
+                                    <i class="_icon-share"></i>
+                                    Share</a>
+                            </li>
+                            <li>
+                                <a href="#" class="like" aria-label="Mark as">
+                                    <i class="_icon-heart"></i>
+                                    Like</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <picture>
+                        <source class="lazy" type="image/webp" width="250" height="264" media="(max-width: 335px)"
+                            srcset="./images/product/vase-small@w1.gif 1x, ./images/product/vase-small@w2.gif 2x"
+                            data-srcset="./images/product/vase-small@w1.webp 1x, ./images/product/vase-small@w2.webp 2x">
+                        <source class="lazy" type="image/jpeg" width="250" height="264" media="(max-width: 335px)"
+                            srcset="./images/product/vase-small.gif 1x, ./images/product/vase-small@2.gif 2x"
+                            data-srcset="./images/product/vase-small.jpg 1x, ./images/product/vase-small@2.jpg 2x">
+                        <source class="lazy" type="image/webp" width="285" height="301"
+                            srcset="./images/product/vase@w1.gif 1x, ./images/product/vase@w2.gif 2x"
+                            data-srcset="./images/product/vase@w1.webp 1x, ./images/product/vase@w2.webp 2x">
+                        <source class="lazy" type="image/jpeg" width="285" height="301"
+                            srcset="./images/product/vase.gif 1x, ./images/product/vase@2.gif 2x"
+                            data-srcset="./images/product/vase.jpg 1x, ./images/product/vase@2.jpg 2x">
+                        <img loading="lazy" class="lazy" width="285" height="301" src="./images/product/vase.gif"
+                            data-src="./images/product/vase.jpg" alt="Vase.">
+                    </picture>
+                </div>
+                <div class="card-data">
+                    <h3 class="headlines">Potty</h3>
+                    <p class="description">Minimalist flower pot</p>
+                    <span class="spashil-price">Rp 500.000</span>
+                    <span class="normal-price"></span>
+                </div>
+                <div class="deteils">
+                    <div class="deteils-block">
+                        <button class="deteils-btn " type="button">Add to cart</button>
+                        <ul class="deteils-action">
+                            <li>
+                                <a class="share" href="#" aria-label="If you liked">
+                                    <i class="_icon-share"></i>
+                                    Share</a>
+                            </li>
+                            <li>
+                                <a href="" class="like" aria-label="Mark as">
+                                    <i class="_icon-heart"></i>
+                                    Like</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="more">
+            <button class="button-more important-text" type="button">Show More</button>
+        </div>
+    </section>
+
+    <section class="inspirations">
+        <h2 class="headlines">Tips & Tricks</h2>
+        <div class="gallery-viewport">
+            <div class="gallery-contaner">
+                <div class="gallery-el">
+                    <div class="gallery-element ">
+                        <div class="gallery-img">
+                            <picture>
+                                <source class="lazy" type="image/jpeg" width="70" height="45" media="(max-width: 360px)"
+                                    srcset="./images/inspiration/livin-room70.gif 1x, ./images/inspiration/livin-room360.gif 2x"
+                                    data-srcset="./images/inspiration/livin-room70.jpg 1x, ./images/inspiration/livin-room360.jpg 2x">
+                                <source class="lazy" type="image/jpeg" width="100" height="64"
+                                    media="(max-width: 767px)"
+                                    srcset="./images/inspiration/living-room360.gif 1x, ./images/inspiration/living-room768.gif 2x"
+                                    data-srcset="./images/inspiration/livin-room360.jpg 1x, ./images/inspiration/livin-room768.jpg 2x">
+                                <source class="lazy" type="image/jpeg" width="200" height="128"
+                                    media="(max-width: 1335px)"
+                                    srcset="./images/inspiration/living-room768.gif 1x, ./images/inspiration/living-room.gif 2x"
+                                    data-srcset="./images/inspiration/livin-room768.jpg 1x, ./images/inspiration/livin-room.jpg 2x">
+                                <source class="lazy" type="image/jpeg" width="392" height="251"
+                                    srcset="./images/inspiration/livin-room.gif 1x, ./images/inspiration/livin-room@2.gif 2x"
+                                    data-srcset="./images/inspiration/livin-room.jpg 1x, ./images/inspiration/livin-room@2.jpg 2x">
+                                <img loading="lazy" class="lazy" width="392" height="251"
+                                    src="./images/inspiration/livin-room.gif"
+                                    data-src="./images/inspiration/livin-room.jpg" alt="Living room.">
+                            </picture>
+                        </div>
+                        <div class="gallery-text smol small">
+                            <h3 class="headlines">How to create a living room to love</h3>
+                            <p class="time">20 jan 2020</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-el active">
+                    <div class="gallery-element">
+                        <div class="gallery-img">
+                            <picture>
+                                <source class="lazy" type="image/jpeg" width="70" height="45" media="(max-width: 360px)"
+                                    srcset="./images/inspiration/working-space70.gif 1x, ./images/inspiration/working-space360.gif 2x"
+                                    data-srcset="./images/inspiration/working-space70.jpg 1x, ./images/inspiration/working-space360.jpg 2x">
+                                <source class="lazy" type="image/jpeg" width="100" height="64"
+                                    media="(max-width: 767px)"
+                                    srcset="./images/inspiration/working-space360.gif 1x, ./images/inspiration/working-space768.gif 2x"
+                                    data-srcset="./images/inspiration/working-space360.jpg 1x, ./images/inspiration/working-space768.jpg 2x">
+                                <source class="lazy" type="image/jpeg" width="200" height="128"
+                                    media="(max-width: 1335px)"
+                                    srcset="./images/inspiration/working-space768.gif 1x, ./images/inspiration/working-space.gif 2x"
+                                    data-srcset="./images/inspiration/working-space768.jpg 1x, ./images/inspiration/working-space.jpg 2x">
+                                <source class="lazy" type="image/jpeg" width="392" height="251"
+                                    srcset="./images/inspiration/working-space.gif 1x, ./images/inspiration/working-space@2.gif 2x"
+                                    data-srcset="./images/inspiration/working-space.jpg 1x, ./images/inspiration/working-space@2.jpg 2x">
+                                <img loading="lazy" class="lazy" width="392" height="251"
+                                    src="./images/inspiration/working-space.gif"
+                                    data-src="./images/inspiration/working-space.jpg" alt="Working space.">
+                            </picture>
+                        </div>
+                        <div class="gallery-text">
+                            <h3 class="headlines">Solution for clean look working space</h3>
+                            <p class="time">10 jan 2020</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-el">
+                    <div class="gallery-element">
+                        <div class="gallery-img">
+                            <picture>
+                                <source class="lazy" type="image/jpeg" width="70" height="45" media="(max-width: 360px)"
+                                    srcset="./images/inspiration/kitchen70.gif 1x, ./images/inspiration/kitchen360.gif 2x"
+                                    data-srcset="./images/inspiration/kitchen70.jpg 1x, ./images/inspiration/kitchen360.jpg 2x">
+                                <source class="lazy" type="image/jpeg" width="100" height="64"
+                                    media="(max-width: 767px)"
+                                    srcset="./images/inspiration/kitchen360.gif 1x, ./images/inspiration/kitchen768.gif 2x"
+                                    data-srcset="./images/inspiration/kitchen360.jpg 1x, ./images/inspiration/kitchen768.jpg 2x">
+                                <source class="lazy" type="image/jpeg" width="200" height="128"
+                                    media="(max-width: 1335px)"
+                                    srcset="./images/inspiration/kitchen768.gif 1x, ./images/inspiration/kitchen.gif 2x"
+                                    data-srcset="./images/inspiration/kitchen768.jpg 1x, ./images/inspiration/kitchen.jpg 2x">
+                                <source class="lazy" type="image/jpeg" width="392" height="251"
+                                    srcset="./images/inspiration/kitchen.gif 1x, ./images/inspiration/kitchen@2.gif 2x"
+                                    data-srcset="./images/inspiration/kitchen.jpg 1x, ./images/inspiration/kitchen@2.jpg 2x">
+                                <img loading="lazy" class="lazy" width="392" height="251"
+                                    src="./images/inspiration/kitchen.gif" data-src="./images/inspiration/kitchen.jpg"
+                                    alt="Kitchen.">
+                            </picture>
+                        </div>
+                        <div class="gallery-text">
+                            <h3 class="headlines">Make your cooking activity more fun with good setup</h3>
+                            <p class="time">20 jan 2020</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-el">
+                    <div class="gallery-element">
+                        <div class="gallery-img">
+                            <picture>
+                                <source class="lazy" type="image/jpeg" width="70" height="46" media="(max-width: 360px)"
+                                    srcset="./images/inspiration/cupboard70.gif 1x, ./images/inspiration/cupboard360.gif 2x"
+                                    data-srcset="./images/inspiration/cupboard70.jpg 1x, ./images/inspiration/cupboard360.jpg 2x">
+                                <source class="lazy" type="image/jpeg" width="100" height="65"
+                                    media="(max-width: 767px)"
+                                    srcset="./images/inspiration/cupboard360.gif 1x, ./images/inspiration/cupboard768.gif 2x"
+                                    data-srcset="./images/inspiration/cupboard360.jpg 1x, ./images/inspiration/cupboard768.jpg 2x">
+                                <source class="lazy" type="image/jpeg" width="200" height="129"
+                                    media="(max-width: 1335px)"
+                                    srcset="./images/inspiration/cupboard768.gif 1x, ./images/inspiration/cupboard.gif 2x"
+                                    data-srcset="./images/inspiration/cupboard768.jpg 1x, ./images/inspiration/cupboard.jpg 2x">
+                                <source class="lazy" type="image/jpeg" width="390" height="251"
+                                    srcset="./images/inspiration/cupboard.gif 1x, ./images/inspiration/cupboard@2.gif 2x"
+                                    data-srcset="./images/inspiration/cupboard.jpg 1x, ./images/inspiration/cupboard@2.jpg 2x">
+                                <img loading="lazy" class="lazy" width="390" height="251"
+                                    src="./images/inspiration/cupboard.gif" data-src="./images/inspiration/cupboard.jpg"
+                                    alt="Cupboard.">
+                            </picture>
+                        </div>
+                        <div class="gallery-text">
+                            <h3 class="headlines">Living Room Wall Glass Showcase Designs</h3>
+                            <p class="time">15 jan 2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="arrow arrow-next" type="button" aria-label="Next">
+            <i class="_icon-arrownext" aria-hidden="true"></i>
+            <span class="visually-hidden">Next</span>
+        </button>
+        <button class="arrow arrow-prev" type="button" aria-label="Previous">
+            <i class="_icon-arrowprev" aria-hidden="true"></i>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <ul class="indicator">
+            <li class="bot active" aria-current="true">
+                <span></span>
+            </li>
+            <li class="bot">
+                <span></span>
+            </li>
+            <li class="bot">
+                <span></span>
+            </li>
+            <li class="bot">
+                <span></span>
+            </li>
+        </ul>
+    </section>
+
+    <section class="share">
+        <p class="important-text">Share your setup with</p>
+        <h2 class="headlines">#LoremFurniture</h2>
+        <div class="share-row" role="list">
+            <ul class="share-column">
+                <li class="share-item">
+                    <a class="share-link" href="#" title="See all types of shelves">
+                        <picture>
+                            <source class="lazy" type="image/webp" width="187" height="312"
+                                srcset="./images/share/shelves@w1.gif 1x, ./images/share/shelves@w2.gif 2x"
+                                data-srcset="./images/share/shelves@w1.webp 1x, ./images/share/shelves@w2.webp 2x">
+                            <source class="lazy" type="image/jpeg" width="187" height="312"
+                                srcset="./images/share/shelves.gif 1x, ./images/share/shelves@2.gif 2x"
+                                data-srcset="./images/share/shelves.jpg 1x, ./images/share/shelves@2.jpg 2x">
+                            <img loading="lazy" class="lazy" width="187" height="312" src="./images/share/shelves.gif"
+                                data-src="./images/share/shelves.jpg" alt="Shelves.">
+                        </picture>
+                    </a>
+                </li>
+                <li class="share-item">
+                    <a class="share-link" href="#" title="See all types of shelves desktops">
+                        <picture>
+                            <source class="lazy" type="image/webp" width="240" height="312" media="(max-width: 430px)"
+                                srcset="./images/share/desktop-small@w1.gif 1x, ./images/share/desktop-small@w2.gif 2x"
+                                data-srcset="./images/share/desktop-small@w1.webp 1x, ./images/share/desktop-small@w2.webp 2x">
+                            <source class="lazy" type="image/jpeg" width="240" height="312" media="(max-width: 430px)"
+                                srcset="./images/share/desktop-small@1.jpg 1x, ./images/share/desktop-small@2.jpg 2x"
+                                data-srcset="./images/share/desktop-small@1.jpg 1x, ./images/share/desktop-small@2.jpg 2x">
+                            <source class="lazy" type="image/webp" width="308" height="312"
+                                srcset="./images/share/desktop@w1.gif 1x, ./images/share/desktop@w2.gif 2x"
+                                data-srcset="./images/share/desktop@w1.webp 1x, ./images/share/desktop@w2.webp 2x">
+                            <source class="lazy" type="image/jpeg" width="308" height="312"
+                                srcset="./images/share/shelves.gif 1x, ./images/share/desktop@2.gif 2x"
+                                data-srcset="./images/share/shelves.jpg 1x, ./images/share/desktop@2.jpg 2x">
+                            <img loading="lazy" class="lazy" width="308" height="312" src="./images/share/desktop.gif"
+                                data-src="./images/share/desktop.jpg" alt="Desktop.">
+                        </picture>
+                    </a>
+                </li>
+                <li class="share-item">
+                    <a class="share-link" href="#" title="See all types of shelves bedroom furnitures.">
+                        <picture>
+                            <source class="lazy" type="image/webp" width="261" height="332"
+                                srcset="./images/share/bedroom-furniture@w1.gif 1x, ./images/share/bedroom-furniture@w2.gif 2x"
+                                data-srcset="./images/share/bedroom-furniture@w1.webp 1x, ./images/share/bedroom-furniture@w2.webp 2x">
+                            <source class="lazy" type="image/jpeg" width="261" height="332"
+                                srcset="./images/share/bedroom-furniture.gif 1x, ./images/share/bedroom-furniture@2.gif 2x"
+                                data-srcset="./images/share/bedroom-furniture.jpg 1x, ./images/share/bedroom-furniture@2.jpg 2x">
+                            <img loading="lazy" class="lazy" width="261" height="332"
+                                src="./images/share/bedroom-furniture.gif"
+                                data-src="./images/share/bedroom-furniture.jpg" alt="Bedroom furniture.">
+                        </picture>
+                    </a>
+                </li>
+                <li class="share-item">
+                    <a class="share-link" href="#" title="See all types of shelves chairs.">
+                        <picture>
+                            <source class="lazy" type="image/webp" width="234" height="332"
+                                srcset="./images/share/chairs@w1.gif 1x, ./images/share/chairs@w2.gif 2x"
+                                data-srcset="./images/share/chairs@w1.webp 1x, ./images/share/chairs@w2.webp 2x">
+                            <source class="lazy" type="image/jpeg" width="234" height="332"
+                                srcset="./images/share/chairs.gif 1x, ./images/share/chairs@2.gif 2x"
+                                data-srcset="./images/share/chairs.jpg 1x, ./images/share/chairs@2.jpg 2x">
+                            <img loading="lazy" class="lazy" width="234" height="332" src="./images/share/chairs.gif"
+                                alt="Chairs." data-src="./images/share/chairs.jpg">
+                        </picture>
+                    </a>
+                </li>
+            </ul>
+            <ul class="share-column">
+                <li class="share-item">
+                    <a class="share-link" href="#" title="See all types of shelves festive tables.">
+                        <picture>
+                            <source class="lazy" type="image/webp" width="240" height="392" media="(max-width: 430px)"
+                                srcset="./images/share/festive-table-small@w1.gif 1x, ./images/share/festive-table-small@w2.gif 2x"
+                                data-srcset="./images/share/festive-table-small@w1.webp 1x, ./images/share/festive-table-small@w2.webp 2x">
+                            <source class="lazy" type="image/jpeg" width="240" height="392" media="(max-width: 430px)"
+                                srcset="./images/share/festive-table-small@1.gif 1x, ./images/share/festive-table-small@2.gif 2x"
+                                data-srcset="./images/share/festive-table-small@1.jpg 1x, ./images/share/festive-table-small@2.jpg 2x">
+                            <source class="lazy" type="image/webp" width="409" height="392"
+                                srcset="./images/share/festive-table@w1.gif 1x, ./images/share/festive-table@w2.gif 2x"
+                                data-srcset="./images/share/festive-table@w1.webp 1x, ./images/share/festive-table@w2.webp 2x">
+                            <source class="lazy" type="image/jpeg" width="409" height="392"
+                                srcset="./images/share/festive-table.gif 1x, ./images/share/festive-table@2.gif 2x"
+                                data-srcset="./images/share/festive-table.jpg 1x, ./images/share/festive-table@2.jpg 2x">
+                            <img loading="lazy" class="lazy" width="409" height="392"
+                                src="./images/share/festive-table.gif" data-src="./images/share/festive-table.jpg"
+                                alt="Festive table.">
+                        </picture>
+                    </a>
+                </li>
+                <li class="share-item">
+                    <a class="share-link" href="#" title="See all types of shelves dinner tables.">
+                        <picture>
+                            <source class="lazy" type="image/webp" width="240" height="392" media="(max-width: 430px)"
+                                srcset="./images/share/dinner-table-small@w1.gif 1x, ./images/share/dinner-table-small@w2.gif 2x"
+                                data-srcset="./images/share/dinner-table-small@w1.webp 1x, ./images/share/dinner-table-small@w2.webp 2x">
+                            <source class="lazy" type="image/jpeg" width="240" height="392" media="(max-width: 430px)"
+                                srcset="./images/share/dinner-table-small@1.gif 1x, ./images/share/dinner-table-small@2.gif 2x"
+                                data-srcset="./images/share/dinner-table-small@1.jpg 1x, ./images/share/dinner-table-small@2.jpg 2x">
+                            <source class="lazy" type="image/webp" width="291" height="392"
+                                srcset="./images/share/dinner-table@w1.gif 1x, ./images/share/dinner-table@w2.gif 2x"
+                                data-srcset="./images/share/dinner-table@w1.webp 1x, ./images/share/dinner-table@w2.webp 2x">
+                            <source class="lazy" type="image/jpeg" width="291" height="392"
+                                srcset="./images/share/dinner-table.gif 1x, ./images/share/dinner-table@2.gif 2x"
+                                data-srcset="./images/share/dinner-table.jpg 1x, ./images/share/dinner-table@2.jpg 2x">
+                            <img loading="lazy" class="lazy" width="291" height="392"
+                                src="./images/share/dinner-table.gif" data-src="./images/share/dinner-table.jpg"
+                                alt="Dinner table.">
+                        </picture>
+                    </a>
+                </li>
+                <li class="share-item">
+                    <a class="share-link" href="#" title="See all types of shelves portrait frames.">
+                        <picture>
+                            <source class="lazy" type="image/webp" width="240" height="251" media="(max-width: 430px)"
+                                srcset="./images/share/portrait-frame-small@w1.gif 1x, ./images/share/portrait-frame-small@w2.gif 2x"
+                                data-srcset="./images/share/portrait-frame-small@w1.webp 1x, ./images/share/portrait-frame-small@w2.webp 2x">
+                            <source class="lazy" type="image/jpeg" width="240" height="251" media="(max-width: 430px)"
+                                srcset="./images/share/portrait-frame-small@1.gif 1x, ./images/share/portrait-frame-small@2.gif 2x"
+                                data-srcset="./images/share/portrait-frame-small@1.jpg 1x, ./images/share/portrait-frame-small@2.jpg 2x">
+                            <source class="lazy" type="image/webp" width="409" height="251"
+                                srcset="./images/share/portrait-frame@w1.gif 1x, ./images/share/portrait-frame@w2.gif 2x"
+                                data-srcset="./images/share/portrait-frame@w1.webp 1x, ./images/share/portrait-frame@w2.webp 2x">
+                            <source class="lazy" type="image/jpeg" width="409" height="251"
+                                srcset="./images/share/portrait-frame.gif 1x, ./images/share/portrait-frame@2.gif 2x"
+                                data-srcset="./images/share/portrait-frame.jpg 1x, ./images/share/portrait-frame@2.jpg 2x">
+                            <img loading="lazy" class="lazy" width="409" height="251"
+                                src="./images/share/portrait-frame.gif" data-src="./images/share/portrait-frame.jpg"
+                                alt="Portrait frame.">
+                        </picture>
+                    </a>
+                </li>
+                <li class="share-item">
+                    <a class="share-link" href="#" title="See all types of shelves furnitures for kitchen.">
+                        <picture>
+                            <source class="lazy" type="image/webp" width="240" height="251" media="(max-width: 430px)"
+                                srcset="./images/share/furniture-for-kitchen-small@w1.gif 1x, ./images/share/furniture-for-kitchen-small@w2.gif 2x"
+                                data-srcset="./images/share/furniture-for-kitchen-small@w1.webp 1x, ./images/share/furniture-for-kitchen-small@w2.webp 2x">
+                            <source class="lazy" type="image/jpeg" width="240" height="251" media="(max-width: 430px)"
+                                srcset="./images/share/furniture-for-kitchen-small@1.gif 1x, ./images/share/furniture-for-kitchen-small@2.gif 2x"
+                                data-srcset="./images/share/furniture-for-kitchen-small@1.jpg 1x, ./images/share/furniture-for-kitchen-small@2.jpg 2x">
+                            <source class="lazy" type="image/webp" width="291" height="251"
+                                srcset="./images/share/furniture-for-kitchen@w1.gif 1x, ./images/share/furniture-for-kitchen@w2.gif 2x"
+                                data-srcset="./images/share/furniture-for-kitchen@w1.webp 1x, ./images/share/furniture-for-kitchen@w2.webp 2x">
+                            <source class="lazy" type="image/jpeg" width="291" height="251"
+                                srcset="./images/share/furniture-for-kitchen.gif 1x, ./images/share/furniture-for-kitchen@2.gif 2x"
+                                data-srcset="./images/share/furniture-for-kitchen.jpg 1x, ./images/share/furniture-for-kitchen@2.jpg 2x">
+                            <img loading="lazy" class="lazy" width="291" height="251"
+                                src="./images/share/furniture-for-kitchen.gif"
+                                data-src="./images/share/furniture-for-kitchen.jpg" alt="Furniture for kitchen.">
+                        </picture>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <hr>
+
+    <footer class="footer">
+        <div class="contacts-contaner">
+            <div class="contacts-block">
+                <a href="#" class="headlines" id="info" aria-label="Furniture store">Lorem.</a>
+                <p class="contact-text" aria-describedby="info">Worldwide furniture store since 2020. We sell over 1000+
+                    branded products on our
+                    website</p>
+                <ul class="contacts">
+                    <li class="contact-item">
+                        <a class="address" href="#" aria-label="We are">
+                            <i class="_icon-address"></i>
+                            Sawojajar Malang, Hawaii</a>
+                    </li>
+                    <li class="contact-item">
+                        <a class="tel" href="tel:+62894563455" aria-label="Our phone number">
+                            <i class="_icon-tel"></i>
+                            +6289 456 3455</a>
+                    </li>
+                    <li class="contact-item">
+                        <a class="web" href="www.lorem.com" aria-label="Our website">www.lorem.com</a>
+                    </li>
+                </ul>
+            </div>
+            <nav class="allBlocks-choice">
+                <div class="block-choice">
+                    <button class="choice headlines" id="Menu" type="button" data-toggle="dropdown" aria-expanded="true"
+                        aria-label="View category.">Menu
+                        <i class="_icon-line"></i>
+                    </button>
+                    <ul class="link-header" aria-labelledby="Menu">
+                        <li class="contact-item">
+                            <a href="#">Products</a>
+                        </li>
+                        <li class="contact-item">
+                            <a href="#">Rooms</a>
+                        </li>
+                        <li class="contact-item">
+                            <a href="#">Inspirations</a>
+                        </li>
+                        <li class="contact-item">
+                            <a href="#">About Us</a>
+                        </li>
+                        <li class="contact-item">
+                            <a href="#">Terms & Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="block-choice">
+                    <button class="choice headlines" id="Account" type="button" data-toggle="dropdown"
+                        aria-expanded="true" aria-label="View category.">Account
+                        <i class="_icon-line"></i>
+                    </button>
+                    <ul class="link-header" aria-labelledby="Account">
+                        <li class="contact-item">
+                            <a href="#">My Account</a>
+                        </li>
+                        <li class="contact-item">
+                            <a href="#">Checkout</a>
+                        </li>
+                        <li class="contact-item">
+                            <a href="#">My Cart</a>
+                        </li>
+                        <li class="contact-item">
+                            <a href="#">My catalog</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="block-choice">
+                    <button class="choice headlines" id="Connection" type="button" data-toggle="dropdown"
+                        aria-expanded="true" aria-label="View category.">Stay Connected
+                        <i class="_icon-line"></i>
+                    </button>
+                    <ul class="link-header" aria-labelledby="Connection">
+                        <li class="contact-item">
+                            <a href="#">Facebook</a>
+                        </li>
+                        <li class="contact-item">
+                            <a href="#">Instagram</a>
+                        </li>
+                        <li class="contact-item">
+                            <a href="#">Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="contacts-block">
+                <p class="headlines">Stay Updated</p>
+                <form method="get" class="form">
+                    <div class="input-block">
+                        <input type="text" placeholder="Enter your email">
+                    </div>
+                    <button class="submit" type="submit" aria-label="Subscribe">
+                        <i class="_icon-send"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <script defer src="./app.js"></script>
+
+</body>
+
+</html>

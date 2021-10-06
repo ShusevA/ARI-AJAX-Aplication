@@ -1,0 +1,207 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    max-width: 1296px;
+    margin: 0 auto;
+    position: fixed;
+    padding: 0 10px;
+    right: 0;
+    top: 65px;
+    z-index: 1;
+    transition: top 1s;
+
+    &.sticky {
+        top: 0;
+        max-width: 100%;
+        border: 1px solid rgb(250, 187, 104);
+        background-color: rgba(169, 169, 169, .8);
+        box-shadow: 0 0 15px $color-btn;
+    }
+
+    @media only screen and (min-width: 370px) {
+        padding: 0 30px;
+    } 
+}
+
+.nav-main {
+    align-items: center;
+    display: flex;
+} 
+
+.sticky .logo {
+    background: transparent;
+} 
+
+.logo {
+    color: $color-header-nav;    
+    font-weight: bold;
+    font-size: $size-headerMain;
+    line-height: 30px;
+    padding-right: 20px; 
+
+    @media only screen and (min-width: 370px) {
+        padding-right: 40px; 
+    }  
+}
+
+.nav-content {
+    align-items: center;
+    display: none;
+    position: relative;
+    
+    @media only screen and (min-width: 900px) {
+        display: flex;
+    }
+    
+    .button {
+        @include gilroy-text;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        margin-right: 44px;
+        padding: 0;
+
+        i {
+            margin-left: 8px;
+            font-size: 10px;
+        }
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        background-color: $color-effect;
+    }
+
+    .dropdown-linck:hover {
+        color: $color-btn;
+    }
+
+    .dropdown-menu:not(.active) {
+        display: none;
+    }
+    
+    a {
+        @include gilroy-text;
+    } 
+}
+
+.nav-content.active {
+    background-color: $color-header-nav;
+    display: block;
+    height: 100%;
+    left: 0;
+    overflow-y: scroll;
+    position: fixed;
+    padding: 150px 50px;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+ 
+    .button, a {
+        color: grey;
+        display: block;
+    }
+    
+    .dropdown-item a {
+        color: gray;
+        padding: 5px;
+    }
+
+    a:hover {
+        color: $color-btn;
+    }
+}
+    
+.nav-asside {
+    display: flex; 
+}
+
+.customer-menu {
+    display: flex;
+    align-items: center;
+
+    .item {
+        position: relative;
+    }
+        
+    .show .popuptext {
+        display: block;
+        width: max-content;
+        padding: 8px;
+        background-color: #555;
+        color: $color-effect;
+        text-align: center;
+        border-radius: 6px;
+        position: absolute;
+        z-index: 1;
+        top: 125%;
+        margin-left: -100%;
+    }
+    .show .popuptext::before {
+        content: "";
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent #555 transparent;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -5px;
+        position: absolute;
+
+    }
+
+    .item:not(:last-child) {
+        margin-right: 10px;
+
+        @media only screen and (min-width: 370px) {
+            margin-right: 32px;
+        }  
+    }
+
+    .menu-link {
+        display: block;
+        touch-action: manipulation;
+
+        i {
+            display: block;
+            font-size: 26px;
+            color: #262F56;
+        }
+    }
+    
+    .cart i {
+        font-weight: 600;
+    }
+
+    .profile {
+        width: 40px;
+        height: 40px;
+
+        img {
+            border: 2px solid #262F56;
+            border-radius: 50%;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.smart-menu {
+    border: none;
+    background: transparent;
+    margin-right: 10px;
+    cursor: pointer;
+    z-index: 2;  
+
+    .hamburger.active::after {
+        background: $color-effect;
+    }
+
+    .hamburger.active::before {
+        background: $color-effect;
+    }
+        
+    @media only screen and (min-width: 900px) {
+        display: none;
+    }
+}

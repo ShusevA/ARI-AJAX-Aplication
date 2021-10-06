@@ -1,0 +1,152 @@
+.product {
+    margin: 0 auto;
+    max-width: 1298px;
+    padding: 0; 
+    
+    @media only screen and (min-width: 360px) {
+        padding: 0 14px; 
+    }
+
+    .headlines {
+        margin-bottom: 32px;
+        text-align: center;
+    }
+}
+
+.products {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+    @media only screen and (min-width: 1300px) {
+        justify-content: space-between;
+    }
+}
+
+.card {
+    flex: 0 1 285px;
+    background: $color-Background;
+    position: relative;
+    margin: 16px;
+
+    @media only screen and (max-width: 335px) {
+        flex-basis: 250px; 
+    }
+
+    &:hover .deteils {
+        display: block;
+    }
+    .card-img {
+        max-height: 301px;
+        min-height: 300px; 
+        
+        @media only screen and (max-width: 336px) {
+            min-height: 265px; 
+        }
+    }
+
+    img {
+        display: block;
+        max-width: 100%;
+        max-height: 301px;
+        margin: 0 auto;
+    }
+}
+
+.card-data {
+    padding: 16px 0 30px 16px;
+
+    .headlines {
+        font-size: $size-headerMain;
+        margin-bottom: 8px;
+        text-align: left;
+    }
+    
+    .description {
+        margin-bottom: 8px;
+    }
+    
+    .spashil-price {
+        font-size: $size-subheader;
+        color: $color-header;
+        font-weight: 600;
+    }
+    .normal-price {
+        @include gilroy-text;
+        color: $color-price;
+        padding-left: 16px;                 
+        text-decoration-line: line-through;
+    }   
+}
+
+.deteils {
+    background-color: $color-header;
+    display: none;
+    height: 100%;
+    left: 0;
+    opacity: .72;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    .deteils-block {
+        left: 14.7%;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        width: 180px;
+
+        @media only screen and (min-width: 336px) {
+            width: 202px;
+        }
+
+        .deteils-btn {
+            @include effect-text;
+            background: $color-effect;
+            border: none;
+            color: $color-btn;
+            cursor: pointer;
+            padding: 12px 0;
+            margin-bottom: 24px;
+            width: 100%;
+        }
+
+        .deteils-action {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10px 0 15px;
+
+            a {
+                @include effect-text;
+            }
+            
+            ._icon-share {
+                font-size: 20px;
+                padding-right: 10px;
+                vertical-align: sub;    
+            }
+
+            ._icon-heart {
+                font-size: 24px;
+                padding-right:10px;
+                vertical-align: sub;    
+            }       
+        }
+    }
+}
+
+.more {
+    text-align: center;
+    margin-top: 32px;
+
+    .button-more {
+        cursor: pointer;
+        color: $color-btn;
+        background: $color-effect;
+        border: 1px solid $color-btn;
+        font-family: inherit;
+        font-weight: 600;
+        font-size: $size-base;
+        padding: 12px 82px; 
+    }    
+}

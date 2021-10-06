@@ -1,0 +1,55 @@
+.share {
+    margin: 0 auto;
+    max-width: 1243px;
+
+    .important-text {
+        color: $color-link;
+        font-size: $size-base;
+        text-align: center;
+
+        @media only screen and (min-width: 375px) {
+            font-size: $size-subheader;
+        }
+    }
+}
+.headlines {
+    font-size: 30px;
+    margin-bottom: 43px;
+    text-align: center;
+
+    @media only screen and (min-width: 375px) {
+        font-size: $size-header;
+    }
+}
+
+.share-row {
+    display: flex;
+    flex-direction: column;
+    flex: 100%;
+
+    @media only screen and (min-width: 768px) {
+        flex-flow: row nowrap;
+    }
+}
+
+.share-column {
+    display: flex;
+    justify-content: center;
+    flex: auto;
+    flex-wrap: wrap; 
+
+    .share-item {
+        overflow: hidden;
+        margin: 7px 15px;
+
+        @media only screen and (min-width: 768px) {
+            margin: 6px;
+        }
+    }
+    
+    img {
+        max-width: 100%;
+    }
+}
+
+

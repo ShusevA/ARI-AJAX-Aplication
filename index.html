@@ -2,10 +2,11 @@
 <html lang="en-us">
 
 <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Furniture store Lorem, unique design, highest quality and, unique style, individual approach, natural materials are used.">
     <title>Lorem Shop</title>
-    <link rel="stylesheet" href="./scss/iconsfonts.css">
     <link rel="preload" as="font"
         href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css"
         crossorigin>
@@ -35,7 +36,9 @@
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li class="dropdown-item">
-                                    <a class="dropdown-linck" href="#">Action</a>
+                                    <a class="dropdown-link" href="#">Action</a>
+                                    <a class="dropdown-link" href="#">Do You want more Action </a>
+                                    <a class="dropdown-link" href="#">The main thing</a>
                                 </li>
                             </ul>
                         </li>
@@ -45,13 +48,15 @@
                                 <i class="_icon-line"></i>
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                                <li class="dropdown-item active">
-                                    <a class="dropdown-linck" href="#">Something else here</a>
+                                <li class="dropdown-item">
+                                    <a class="dropdown-link" href="#">Something else here</a>
+                                    <a class="dropdown-link" href="#">Else here</a>
+                                    <a class="dropdown-link" href="#">Now here</a>
                                 </li>
                             </ul>
                         </li>
-                        <li>
-                            <a href="#" aria-label="View category.">Inspirations</a>
+                        <li class="nav-item">
+                            <a class="inspiration" href="#" aria-label="View category.">Inspirations</a>
                         </li>
                     </ul>
                 </div>
@@ -59,18 +64,15 @@
             <div class="nav-asside">
                 <ul class="customer-menu" aria-label="Сustomer menu.">
                     <li class="item">
-                        <a class="menu-link wishlist popup" href="#" aria-label="Liked product.">
-                            <i class="_icon-heartblack"></i>
-                        </a>
+                        <a class="menu-link wishlist popup _icon-heartblack" href="#" aria-label="Liked product."></a>
                     </li>
                     <li class="item">
-                        <a class="menu-link cart popup" href="#" aria-label="Cart">
-                            <i class="_icon-cart"></i>
-                        </a>
+                        <a class="menu-link cart popup _icon-cart" href="#" aria-label="Cart"></a>
                     </li>
                     <li class="item">
                         <a class="menu-link profile popup" href="#" aria-label="Profile">
-                            <img class="my-profile" src="./images/profile.jpg" width="40" height="40" alt="My profile" decoding="async.">
+                            <img class="my-profile" src="./images/profile.jpg" width="40" height="40" alt="My profile"
+                                decoding="async">
                         </a>
                     </li>
                 </ul>
@@ -86,7 +88,7 @@
                     Our furniture is made from selected and best quality materials that are suitable for
                     your dream home
                 </div>
-                <div class="button-link">
+                <div class="button-link btn-hover">
                     <a href="#">Shop Now</a>
                 </div>
             </div>
@@ -117,26 +119,28 @@
     </div>
 
     <section class="product">
-        <h2 class="headlines">Our Products</h2>
+        <h2 class="product-title headlines">Our Products</h2>
         <div class="products">
-            <div class="card">
+            <article class="card">
                 <div class="card-img">
-                    <picture>
-                        <source class="lazy" type="image/webp" width="250" height="264" media="(max-width: 335px)"
-                            data-srcset="./images/product/table-small@w1.webp 1x, ./images/product/table-small@w2.webp 2x">
-                        <source class="lazy" type="image/jpeg" width="250" height="264" media="(max-width: 335px)"
-                            data-srcset="./images/product/table-small.jpg 1x, ./images/product/table-small@2.jpg 2x">
-                        <source class="lazy" type="image/webp" width="285" height="301"
-                            data-srcset="./images/product/table@w1.webp 1x, ./images/product/table@w2.webp 2x">
-                        <source class="lazy" type="image/jpeg" width="285" height="301"
-                            data-srcset="./images/product/table.jpg 1x, ./images/product/table@2.jpg 2x">
-                        <img loading="lazy" class="lazy" width="285" height="301" 
-                            data-src="./images/product/table.jpg" alt="Table.">
-                    </picture>
+                    <a href="#">
+                        <picture>
+                            <source class="lazy" type="image/webp" width="250" height="264" media="(max-width: 335px)"
+                                data-srcset="./images/product/table-small@w1.webp 1x, ./images/product/table-small@w2.webp 2x">
+                            <source class="lazy" type="image/jpeg" width="250" height="264" media="(max-width: 335px)"
+                                data-srcset="./images/product/table-small.jpg 1x, ./images/product/table-small@2.jpg 2x">
+                            <source class="lazy" type="image/webp" width="285" height="301"
+                                data-srcset="./images/product/table@w1.webp 1x, ./images/product/table@w2.webp 2x">
+                            <source class="lazy" type="image/jpeg" width="285" height="301"
+                                data-srcset="./images/product/table.jpg 1x, ./images/product/table@2.jpg 2x">
+                            <img loading="lazy" class="lazy" width="285" height="301"
+                                data-src="./images/product/table.jpg" alt="Table.">
+                        </picture>
+                    </a>
                 </div>
                 <div class="card-data">
                     <h3 class="headlines">Syltherine</h3>
-                    <p class="description">Stylish cafe chair</p>
+                    <div class="description">Stylish cafe chair</div>
                     <span class="spashil-price">Rp 2.500.000</span>
                     <span class="normal-price">Rp 3.500.000</span>
                 </div>
@@ -145,297 +149,277 @@
                         <button class="deteils-btn" type="button">Add to cart</button>
                         <ul class="deteils-action">
                             <li>
-                                <a class="share" href="#" aria-label="If you liked">
-                                    <i class="_icon-share"></i>
-                                    Share
-                                </a>
+                                <a class="deteils-link _icon-share" href="#" aria-label="If you liked">Share</a>
                             </li>
                             <li>
-                                <a href="#" class="like" aria-label="Mark as">
-                                    <i class="_icon-heart"></i>
-                                    Like
-                                </a>
+                                <a class="deteils-link _icon-heart" href="#" aria-label="Mark as">Like</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="card">
+            </article>
+            <article class="card">
                 <div class="card-img">
-                    <picture>
-                        <source class="lazy" type="image/webp" width="250" height="265" media="(max-width: 335px)"
-                            data-srcset="./images/product/chair-small@w1.webp 1x, ./images/product/chair-small@w2.webp 2x">
-                        <source class="lazy" type="image/jpeg" width="250" height="265" media="(max-width: 335px)"
-                            data-srcset="./images/product/chair-small.jpg 1x, ./images/product/chair-small@2.jpg 2x">
-                        <source class="lazy" type="image/webp" width="284" height="301"
-                            data-srcset="./images/product/chair@w1.webp 1x, ./images/product/chair@w2.webp 2x">
-                        <source class="lazy" type="image/jpeg" width="284" height="301"
-                            data-srcset="./images/product/chair.jpg 1x, ./images/product/chair@2.jpg 2x">
-                        <img loading="lazy" class="lazy" width="284" height="301" 
-                            data-src="./images/product/chair.jpg" alt="Chair.">
-                    </picture>
+                    <a href="#">
+                        <picture>
+                            <source class="lazy" type="image/webp" width="250" height="265" media="(max-width: 335px)"
+                                data-srcset="./images/product/chair-small@w1.webp 1x, ./images/product/chair-small@w2.webp 2x">
+                            <source class="lazy" type="image/jpeg" width="250" height="265" media="(max-width: 335px)"
+                                data-srcset="./images/product/chair-small.jpg 1x, ./images/product/chair-small@2.jpg 2x">
+                            <source class="lazy" type="image/webp" width="284" height="301"
+                                data-srcset="./images/product/chair@w1.webp 1x, ./images/product/chair@w2.webp 2x">
+                            <source class="lazy" type="image/jpeg" width="284" height="301"
+                                data-srcset="./images/product/chair.jpg 1x, ./images/product/chair@2.jpg 2x">
+                            <img loading="lazy" class="lazy" width="284" height="301"
+                                data-src="./images/product/chair.jpg" alt="Chair.">
+                        </picture>
+                    </a>
                 </div>
                 <div class="card-data">
                     <h3 class="headlines">Leviosa</h3>
-                    <p class="description">Stylish cafe chair</p>
+                    <div class="description">Stylish cafe chair</div>
                     <span class="spashil-price">Rp 2.500.000</span>
                     <span class="normal-price"></span>
                 </div>
                 <div class="deteils">
                     <div class="deteils-block">
-                        <button class="deteils-btn " type="button">Add to cart</button>
+                        <button class="deteils-btn" type="button">Add to cart</button>
                         <ul class="deteils-action">
                             <li>
-                                <a class="share" href="#" aria-label="If you liked">
-                                    <i class="_icon-share"></i>
-                                    Share</a>
+                                <a class="deteils-link _icon-share" href="#" aria-label="If you liked">Share</a>
                             </li>
                             <li>
-                                <a href="#" class="like" aria-label="Mark as">
-                                    <i class="_icon-heart"></i>
-                                    Like</a>
+                                <a href="#" class="deteils-link _icon-heart" aria-label="Mark as">Like</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="card">
+            </article>
+            <article class="card">
                 <div class="card-img">
-                    <picture>
-                        <source class="lazy" type="image/webp" width="250" height="264" media="(max-width: 335px)"
-                            data-srcset="./images/product/sofa-small@w1.webp 1x, ./images/product/sofa-small@w2.webp 2x">
-                        <source class="lazy" type="image/jpeg" width="250" height="264" media="(max-width: 335px)"
-                            data-srcset="./images/product/sofa-small.jpg 1x, ./images/product/sofa-small@2.jpg 2x">
-                        <source class="lazy" type="image/webp" width="285" height="301"
-                            data-srcset="./images/product/sofa@w1.webp 1x, ./images/product/sofa@w2.webp 2x">
-                        <source class="lazy" type="image/jpeg" width="285" height="301"
-                            data-srcset="./images/product/sofa.jpg 1x, ./images/product/sofa@2.jpg 2x">
-                        <img loading="lazy" class="lazy" width="285" height="301" 
-                            data-src="./images/product/sofa.jpg" alt="Sofa.">
-                    </picture>
+                    <a href="#">
+                        <picture>
+                            <source class="lazy" type="image/webp" width="250" height="264" media="(max-width: 335px)"
+                                data-srcset="./images/product/sofa-small@w1.webp 1x, ./images/product/sofa-small@w2.webp 2x">
+                            <source class="lazy" type="image/jpeg" width="250" height="264" media="(max-width: 335px)"
+                                data-srcset="./images/product/sofa-small.jpg 1x, ./images/product/sofa-small@2.jpg 2x">
+                            <source class="lazy" type="image/webp" width="285" height="301"
+                                data-srcset="./images/product/sofa@w1.webp 1x, ./images/product/sofa@w2.webp 2x">
+                            <source class="lazy" type="image/jpeg" width="285" height="301"
+                                data-srcset="./images/product/sofa.jpg 1x, ./images/product/sofa@2.jpg 2x">
+                            <img loading="lazy" class="lazy" width="285" height="301"
+                                data-src="./images/product/sofa.jpg" alt="Sofa.">
+                        </picture>
+                    </a>
                 </div>
                 <div class="card-data">
                     <h3 class="headlines">Lolito</h3>
-                    <p class="description">Luxury big sofa</p>
+                    <div class="description">Luxury big sofa</div>
                     <span class="spashil-price">Rp 7.000.000</span>
                     <span class="normal-price">Rp 14.000.000</span>
                 </div>
                 <div class="deteils">
                     <div class="deteils-block">
-                        <button class="deteils-btn " type="button">Add to cart</button>
+                        <button class="deteils-btn" type="button">Add to cart</button>
                         <ul class="deteils-action">
                             <li>
-                                <a class="share" href="#" aria-label="If you liked">
-                                    <i class="_icon-share"></i>
-                                    Share</a>
+                                <a class="deteils-link _icon-share" href="#" aria-label="If you liked">Share</a>
                             </li>
                             <li>
-                                <a href="#" class="like" aria-label="Mark as">
-                                    <i class="_icon-heart"></i>
-                                    Like</a>
+                                <a href="#" class="deteils-link _icon-heart" aria-label="Mark as">Like</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="card">
+            </article>
+            <article class="card">
                 <div class="card-img">
-                    <picture>
-                        <source class="lazy" type="image/webp" width="250" height="264" media="(max-width: 335px)"
-                            data-srcset="./images/product/fan-small@w1.webp 1x, ./images/product/fan-small@w2.webp 2x">
-                        <source class="lazy" type="image/jpeg" width="250" height="264" media="(max-width: 335px)"
-                            data-srcset="./images/product/fan-small.jpg 1x, ./images/product/fan-small@2.jpg 2x">
-                        <source class="lazy" type="image/webp" width="285" height="301"
-                            data-srcset="./images/product/fan@w1.webp 1x, ./images/product/fan@w2.webp 2x">
-                        <source class="lazy" type="image/jpeg" width="285" height="301"
-                            data-srcset="./images/product/fan.jpg 1x, ./images/product/fan@2.jpg 2x">
-                        <img loading="lazy" class="lazy" width="285" height="301" 
-                            data-src="./images/product/fan.jpg" alt="Fan.">
-                    </picture>
+                    <a href="#">
+                        <picture>
+                            <source class="lazy" type="image/webp" width="250" height="264" media="(max-width: 335px)"
+                                data-srcset="./images/product/fan-small@w1.webp 1x, ./images/product/fan-small@w2.webp 2x">
+                            <source class="lazy" type="image/jpeg" width="250" height="264" media="(max-width: 335px)"
+                                data-srcset="./images/product/fan-small.jpg 1x, ./images/product/fan-small@2.jpg 2x">
+                            <source class="lazy" type="image/webp" width="285" height="301"
+                                data-srcset="./images/product/fan@w1.webp 1x, ./images/product/fan@w2.webp 2x">
+                            <source class="lazy" type="image/jpeg" width="285" height="301"
+                                data-srcset="./images/product/fan.jpg 1x, ./images/product/fan@2.jpg 2x">
+                            <img loading="lazy" class="lazy" width="285" height="301"
+                                data-src="./images/product/fan.jpg" alt="Fan.">
+                        </picture>
+                    </a>
                 </div>
                 <div class="card-data">
                     <h3 class="headlines">Respira</h3>
-                    <p class="description">Minimalist fan</p>
+                    <div class="description">Minimalist fan</div>
                     <span class="spashil-price">Rp 500.000</span>
                     <span class="normal-price"></span>
                 </div>
                 <div class="deteils">
                     <div class="deteils-block">
-                        <button class="deteils-btn " type="button">Add to cart</button>
+                        <button class="deteils-btn" type="button">Add to cart</button>
                         <ul class="deteils-action">
                             <li>
-                                <a class="share" href="#" aria-label="If you liked">
-                                    <i class="_icon-share"></i>
-                                    Share</a>
+                                <a class="deteils-link _icon-share" href="#" aria-label="If you liked">Share</a>
                             </li>
                             <li>
-                                <a href="#" class="like" aria-label="Mark as">
-                                    <i class="_icon-heart"></i>
-                                    Like</a>
+                                <a href="#" class="deteils-link _icon-heart" aria-label="Mark as">Like</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="card">
+            </article>
+            <article class="card">
                 <div class="card-img">
-                    <picture>
-                        <source class="lazy" type="image/webp" width="250" height="264" media="(max-width: 335px)"
-                            data-srcset="./images/product/floor-lamp-small@w1.webp 1x, ./images/product/floor-lamp-small@w2.webp 2x">
-                        <source class="lazy" type="image/jpeg" width="250" height="264" media="(max-width: 335px)"
-                            data-srcset="./images/product/floor-lamp-small.jpg 1x, ./images/product/floor-lamp-small@2.jpg 2x">
-                        <source class="lazy" type="image/webp" width="285" height="301"
-                            data-srcset="./images/product/floor-lamp@w1.webp 1x, ./images/product/floor-lamp@w2.webp 2x">
-                        <source class="lazy" type="image/jpeg" width="285" height="301"
-                            data-srcset="./images/product/floor-lamp.jpg 1x, ./images/product/floor-lamp@2.jpg 2x">
-                        <img loading="lazy" class="lazy" width="285" height="301" 
-                            data-src="./images/product/floor-lamp.jpg" alt="Floor Lamp.">
-                    </picture>
+                    <a href="#">
+                        <picture>
+                            <source class="lazy" type="image/webp" width="250" height="264" media="(max-width: 335px)"
+                                data-srcset="./images/product/floor-lamp-small@w1.webp 1x, ./images/product/floor-lamp-small@w2.webp 2x">
+                            <source class="lazy" type="image/jpeg" width="250" height="264" media="(max-width: 335px)"
+                                data-srcset="./images/product/floor-lamp-small.jpg 1x, ./images/product/floor-lamp-small@2.jpg 2x">
+                            <source class="lazy" type="image/webp" width="285" height="301"
+                                data-srcset="./images/product/floor-lamp@w1.webp 1x, ./images/product/floor-lamp@w2.webp 2x">
+                            <source class="lazy" type="image/jpeg" width="285" height="301"
+                                data-srcset="./images/product/floor-lamp.jpg 1x, ./images/product/floor-lamp@2.jpg 2x">
+                            <img loading="lazy" class="lazy" width="285" height="301"
+                                data-src="./images/product/floor-lamp.jpg" alt="Floor Lamp.">
+                        </picture>
+                    </a>
                 </div>
                 <div class="card-data">
                     <h3 class="headlines">Grifo</h3>
-                    <p class="description">Night lamp</p>
+                    <div class="description">Night lamp</div>
                     <span class="spashil-price">Rp 1.500.000</span>
                     <span class="normal-price"></span>
                 </div>
                 <div class="deteils">
                     <div class="deteils-block">
-                        <button class="deteils-btn " type="button">Add to cart</button>
+                        <button class="deteils-btn" type="button">Add to cart</button>
                         <ul class="deteils-action">
                             <li>
-                                <a class="share" href="#" aria-label="If you liked">
-                                    <i class="_icon-share"></i>
-                                    Share</a>
+                                <a class="deteils-link _icon-share" href="#" aria-label="If you liked">Share</a>
                             </li>
                             <li>
-                                <a href="#" class="like" aria-label="Mark as">
-                                    <i class="_icon-heart"></i>
-                                    Like</a>
+                                <a href="#" class="deteils-link _icon-heart" aria-label="Mark as">Like</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="card">
+            </article>
+            <article class="card">
                 <div class="card-img">
-                    <picture>
-                        <source class="lazy" type="image/webp" width="250" height="264" media="(max-width: 335px)"
-                            data-srcset="./images/product/cup-small@w1.webp 1x, ./images/product/cup-small@w2.webp 2x">
-                        <source class="lazy" type="image/jpeg" width="250" height="264" media="(max-width: 335px)"
-                            data-srcset="./images/product/cup-small.jpg 1x, ./images/product/cup-small@2.jpg 2x">
-                        <source class="lazy" type="image/webp" width="285" height="301"
-                            data-srcset="./images/product/cup@w1.webp 1x, ./images/product/cup@w2.webp 2x">
-                        <source class="lazy" type="image/jpeg" width="285" height="301"
-                            data-srcset="./images/product/cup.jpg 1x, ./images/product/cup@2.jpg 2x">
-                        <img loading="lazy" class="lazy" width="285" height="301" 
-                            data-src="./images/product/cup.jpg" alt="Cup.">
-                    </picture>
+                    <a href="#">
+                        <picture>
+                            <source class="lazy" type="image/webp" width="250" height="264" media="(max-width: 335px)"
+                                data-srcset="./images/product/cup-small@w1.webp 1x, ./images/product/cup-small@w2.webp 2x">
+                            <source class="lazy" type="image/jpeg" width="250" height="264" media="(max-width: 335px)"
+                                data-srcset="./images/product/cup-small.jpg 1x, ./images/product/cup-small@2.jpg 2x">
+                            <source class="lazy" type="image/webp" width="285" height="301"
+                                data-srcset="./images/product/cup@w1.webp 1x, ./images/product/cup@w2.webp 2x">
+                            <source class="lazy" type="image/jpeg" width="285" height="301"
+                                data-srcset="./images/product/cup.jpg 1x, ./images/product/cup@2.jpg 2x">
+                            <img loading="lazy" class="lazy" width="285" height="301"
+                                data-src="./images/product/cup.jpg" alt="Cup.">
+                        </picture>
+                    </a>
                 </div>
                 <div class="card-data">
                     <h3 class="headlines">Muggo</h3>
-                    <p class="description">Small mug</p>
+                    <div class="description">Small mug</div>
                     <span class="spashil-price">Rp 150.000</span>
                     <span class="normal-price"></span>
                 </div>
                 <div class="deteils">
                     <div class="deteils-block">
-                        <button class="deteils-btn " type="button">Add to cart</button>
+                        <button class="deteils-btn" type="button">Add to cart</button>
                         <ul class="deteils-action">
                             <li>
-                                <a class="share" href="#" aria-label="If you liked">
-                                    <i class="_icon-share"></i>
-                                    Share</a>
+                                <a class="deteils-link _icon-share" href="#" aria-label="If you liked">Share</a>
                             </li>
                             <li>
-                                <a href="#" class="like" aria-label="Mark as">
-                                    <i class="_icon-heart"></i>
-                                    Like</a>
+                                <a href="#" class="deteils-link _icon-heart" aria-label="Mark as">Like</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="card">
+            </article>
+            <article class="card">
                 <div class="card-img">
-                    <picture>
-                        <source class="lazy" type="image/webp" width="250" height="264" media="(max-width: 335px)"
-                            data-srcset="./images/product/bedclothes-small@w1.webp 1x, ./images/product/bedclothes-small@w2.webp 2x">
-                        <source class="lazy" type="image/jpeg" width="250" height="264" media="(max-width: 335px)"
-                            data-srcset="./images/product/bedclothes-small.jpg 1x, ./images/product/bedclothes-small@2.jpg 2x">
-                        <source class="lazy" type="image/webp" width="285" height="301"
-                            data-srcset="./images/product/bedclothes@w1.webp 1x, ./images/product/bedclothes@w2.webp 2x">
-                        <source class="lazy" type="image/jpeg" width="285" height="301"
-                            data-srcset="./images/product/bedclothes.jpg 1x, ./images/product/bedclothes@2.jpg 2x">
-                        <img loading="lazy" class="lazy" width="285" height="301" 
-                            data-src="./images/product/bedclothes.jpg" alt="Bedclothes.">
-                    </picture>
+                    <a href="#">
+                        <picture>
+                            <source class="lazy" type="image/webp" width="250" height="264" media="(max-width: 335px)"
+                                data-srcset="./images/product/bedclothes-small@w1.webp 1x, ./images/product/bedclothes-small@w2.webp 2x">
+                            <source class="lazy" type="image/jpeg" width="250" height="264" media="(max-width: 335px)"
+                                data-srcset="./images/product/bedclothes-small.jpg 1x, ./images/product/bedclothes-small@2.jpg 2x">
+                            <source class="lazy" type="image/webp" width="285" height="301"
+                                data-srcset="./images/product/bedclothes@w1.webp 1x, ./images/product/bedclothes@w2.webp 2x">
+                            <source class="lazy" type="image/jpeg" width="285" height="301"
+                                data-srcset="./images/product/bedclothes.jpg 1x, ./images/product/bedclothes@2.jpg 2x">
+                            <img loading="lazy" class="lazy" width="285" height="301"
+                                data-src="./images/product/bedclothes.jpg" alt="Bedclothes.">
+                        </picture>
+                    </a>
                 </div>
                 <div class="card-data">
                     <h3 class="headlines">Pingky</h3>
-                    <p class="description">Cute bed set</p>
+                    <div class="description">Cute bed set</div>
                     <span class="spashil-price">Rp 7.000.000</span>
                     <span class="normal-price">Rp 7.000.000</span>
                 </div>
                 <div class="deteils">
                     <div class="deteils-block">
-                        <button class="deteils-btn " type="button">Add to cart</button>
+                        <button class="deteils-btn" type="button">Add to cart</button>
                         <ul class="deteils-action">
                             <li>
-                                <a class="share" href="#" aria-label="If you liked">
-                                    <i class="_icon-share"></i>
-                                    Share</a>
+                                <a class="deteils-link _icon-share" href="#" aria-label="If you liked">Share</a>
                             </li>
                             <li>
-                                <a href="#" class="like" aria-label="Mark as">
-                                    <i class="_icon-heart"></i>
-                                    Like</a>
+                                <a href="#" class="deteils-link _icon-heart" aria-label="Mark as">Like</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="card">
+            </article>
+            <article class="card">
                 <div class="card-img">
-                    <picture>
-                        <source class="lazy" type="image/webp" width="250" height="264" media="(max-width: 335px)"
-                            data-srcset="./images/product/vase-small@w1.webp 1x, ./images/product/vase-small@w2.webp 2x">
-                        <source class="lazy" type="image/jpeg" width="250" height="264" media="(max-width: 335px)"
-                            data-srcset="./images/product/vase-small.jpg 1x, ./images/product/vase-small@2.jpg 2x">
-                        <source class="lazy" type="image/webp" width="285" height="301"
-                            data-srcset="./images/product/vase@w1.webp 1x, ./images/product/vase@w2.webp 2x">
-                        <source class="lazy" type="image/jpeg" width="285" height="301"
-                            data-srcset="./images/product/vase.jpg 1x, ./images/product/vase@2.jpg 2x">
-                        <img loading="lazy" class="lazy" width="285" height="301" 
-                            data-src="./images/product/vase.jpg" alt="Vase.">
-                    </picture>
+                    <a href="#">
+                        <picture>
+                            <source class="lazy" type="image/webp" width="250" height="264" media="(max-width: 335px)"
+                                data-srcset="./images/product/vase-small@w1.webp 1x, ./images/product/vase-small@w2.webp 2x">
+                            <source class="lazy" type="image/jpeg" width="250" height="264" media="(max-width: 335px)"
+                                data-srcset="./images/product/vase-small.jpg 1x, ./images/product/vase-small@2.jpg 2x">
+                            <source class="lazy" type="image/webp" width="285" height="301"
+                                data-srcset="./images/product/vase@w1.webp 1x, ./images/product/vase@w2.webp 2x">
+                            <source class="lazy" type="image/jpeg" width="285" height="301"
+                                data-srcset="./images/product/vase.jpg 1x, ./images/product/vase@2.jpg 2x">
+                            <img loading="lazy" class="lazy" width="285" height="301"
+                                data-src="./images/product/vase.jpg" alt="Vase.">
+                        </picture>
+                    </a>
                 </div>
                 <div class="card-data">
                     <h3 class="headlines">Potty</h3>
-                    <p class="description">Minimalist flower pot</p>
+                    <div class="description">Minimalist flower pot</div>
                     <span class="spashil-price">Rp 500.000</span>
                     <span class="normal-price"></span>
                 </div>
                 <div class="deteils">
                     <div class="deteils-block">
-                        <button class="deteils-btn " type="button">Add to cart</button>
+                        <button class="deteils-btn" type="button">Add to cart</button>
                         <ul class="deteils-action">
                             <li>
-                                <a class="share" href="#" aria-label="If you liked">
-                                    <i class="_icon-share"></i>
-                                    Share</a>
+                                <a class="deteils-link _icon-share" href="#" aria-label="If you liked">Share</a>
                             </li>
                             <li>
-                                <a href="#" class="like" aria-label="Mark as">
-                                    <i class="_icon-heart"></i>
-                                    Like</a>
+                                <a href="#" class="deteils-link _icon-heart" aria-label="Mark as">Like</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-            </div>
+            </article>
         </div>
         <div class="more">
-            <button class="button-more important-text" type="button">Show More</button>
+            <button class="button-more important-text btn-hover" type="button">Show More</button>
         </div>
     </section>
 
@@ -506,8 +490,7 @@
                                 <source class="lazy" type="image/jpeg" width="392" height="251"
                                     data-srcset="./images/inspiration/kitchen.jpg 1x, ./images/inspiration/kitchen@2.jpg 2x">
                                 <img loading="lazy" class="lazy" width="392" height="251"
-                                    data-src="./images/inspiration/kitchen.jpg"
-                                    alt="Kitchen.">
+                                    data-src="./images/inspiration/kitchen.jpg" alt="Kitchen.">
                             </picture>
                         </div>
                         <div class="gallery-text">
@@ -531,8 +514,7 @@
                                 <source class="lazy" type="image/jpeg" width="390" height="251"
                                     data-srcset="./images/inspiration/cupboard.jpg 1x, ./images/inspiration/cupboard@2.jpg 2x">
                                 <img loading="lazy" class="lazy" width="390" height="251"
-                                    data-src="./images/inspiration/cupboard.jpg"
-                                    alt="Cupboard.">
+                                    data-src="./images/inspiration/cupboard.jpg" alt="Cupboard.">
                             </picture>
                         </div>
                         <div class="gallery-text">
@@ -543,12 +525,10 @@
                 </div>
             </div>
         </div>
-        <button class="arrow arrow-next" type="button" aria-label="Next">
-            <i class="_icon-arrownext" aria-hidden="true"></i>
+        <button class="arrow arrow-next _icon-arrownext" type="button" aria-label="Next">
             <span class="visually-hidden">Next</span>
         </button>
-        <button class="arrow arrow-prev" type="button" aria-label="Previous">
-            <i class="_icon-arrowprev" aria-hidden="true"></i>
+        <button class="arrow arrow-prev _icon-arrowprev" type="button" aria-label="Previous">
             <span class="visually-hidden">Previous</span>
         </button>
         <ul class="indicator">
@@ -579,7 +559,7 @@
                                 data-srcset="./images/share/shelves@w1.webp 1x, ./images/share/shelves@w2.webp 2x">
                             <source class="lazy" type="image/jpeg" width="187" height="312"
                                 data-srcset="./images/share/shelves.jpg 1x, ./images/share/shelves@2.jpg 2x">
-                            <img loading="lazy" class="lazy" width="187" height="312" 
+                            <img loading="lazy" class="lazy" width="187" height="312"
                                 data-src="./images/share/shelves.jpg" alt="Shelves.">
                         </picture>
                     </a>
@@ -595,7 +575,7 @@
                                 data-srcset="./images/share/desktop@w1.webp 1x, ./images/share/desktop@w2.webp 2x">
                             <source class="lazy" type="image/jpeg" width="308" height="312"
                                 data-srcset="./images/share/shelves.jpg 1x, ./images/share/desktop@2.jpg 2x">
-                            <img loading="lazy" class="lazy" width="308" height="312" 
+                            <img loading="lazy" class="lazy" width="308" height="312"
                                 data-src="./images/share/desktop.jpg" alt="Desktop.">
                         </picture>
                     </a>
@@ -619,8 +599,8 @@
                                 data-srcset="./images/share/chairs@w1.webp 1x, ./images/share/chairs@w2.webp 2x">
                             <source class="lazy" type="image/jpeg" width="234" height="332"
                                 data-srcset="./images/share/chairs.jpg 1x, ./images/share/chairs@2.jpg 2x">
-                            <img loading="lazy" class="lazy" width="234" height="332" 
-                                alt="Chairs." data-src="./images/share/chairs.jpg">
+                            <img loading="lazy" class="lazy" width="234" height="332" alt="Chairs."
+                                data-src="./images/share/chairs.jpg">
                         </picture>
                     </a>
                 </li>
@@ -638,8 +618,7 @@
                             <source class="lazy" type="image/jpeg" width="409" height="392"
                                 data-srcset="./images/share/festive-table.jpg 1x, ./images/share/festive-table@2.jpg 2x">
                             <img loading="lazy" class="lazy" width="409" height="392"
-                                data-src="./images/share/festive-table.jpg"
-                                alt="Festive table.">
+                                data-src="./images/share/festive-table.jpg" alt="Festive table.">
                         </picture>
                     </a>
                 </li>
@@ -655,8 +634,7 @@
                             <source class="lazy" type="image/jpeg" width="291" height="392"
                                 data-srcset="./images/share/dinner-table.jpg 1x, ./images/share/dinner-table@2.jpg 2x">
                             <img loading="lazy" class="lazy" width="291" height="392"
-                                data-src="./images/share/dinner-table.jpg"
-                                alt="Dinner table.">
+                                data-src="./images/share/dinner-table.jpg" alt="Dinner table.">
                         </picture>
                     </a>
                 </li>
@@ -672,8 +650,7 @@
                             <source class="lazy" type="image/jpeg" width="409" height="251"
                                 data-srcset="./images/share/portrait-frame.jpg 1x, ./images/share/portrait-frame@2.jpg 2x">
                             <img loading="lazy" class="lazy" width="409" height="251"
-                                data-src="./images/share/portrait-frame.jpg"
-                                alt="Portrait frame.">
+                                data-src="./images/share/portrait-frame.jpg" alt="Portrait frame.">
                         </picture>
                     </a>
                 </li>
@@ -708,17 +685,13 @@
                     website</p>
                 <ul class="contacts">
                     <li class="contact-item">
-                        <a class="address" href="#" aria-label="We are">
-                            <i class="_icon-address"></i>
-                            Sawojajar Malang, Hawaii</a>
+                        <a class="address _icon-address" href="#" aria-label="We are">Sawojajar Malang, Hawaii</a>
                     </li>
                     <li class="contact-item">
-                        <a class="tel" href="tel:+62894563455" aria-label="Our phone number">
-                            <i class="_icon-tel"></i>
-                            +6289 456 3455</a>
+                        <a class="tel _icon-tel" href="tel:+62894563455" aria-label="Our phone number">+6289 456 3455</a>
                     </li>
                     <li class="contact-item">
-                        <a class="web" href="www.lorem.com" aria-label="Our website">www.lorem.com</a>
+                        <a class="web" href="www.lorem.com" target="_blank" aria-label="Our website">www.lorem.com</a>
                     </li>
                 </ul>
             </div>
@@ -773,30 +746,39 @@
                     </button>
                     <ul class="link-header" aria-labelledby="Connection">
                         <li class="contact-item">
-                            <a href="#">Facebook</a>
+                            <a href="#" target="_blank" rel="nofollow noopener noreferrer">Facebook</a>
                         </li>
                         <li class="contact-item">
-                            <a href="#">Instagram</a>
+                            <a href="#" target="_blank" rel="nofollow noopener noreferrer">Instagram</a>
                         </li>
                         <li class="contact-item">
-                            <a href="#">Twitter</a>
+                            <a href="#" target="_blank" rel="nofollow noopener noreferrer">Twitter</a>
                         </li>
                     </ul>
                 </div>
             </nav>
             <div class="contacts-block">
                 <p class="headlines">Stay Updated</p>
-                <form method="get" class="form">
+                <form action="#" method="get" class="form" name="subscribe">
                     <div class="input-block">
-                        <input type="text" placeholder="Enter your email">
+                        <input autocomplete="off" type="text" name="inputForm" value="" placeholder="Enter your email">
                     </div>
-                    <button class="submit" type="submit" aria-label="Subscribe">
-                        <i class="_icon-send"></i>
-                    </button>
+                    <button class="submit _icon-send" type="submit" aria-label="Subscribe"></button>
+                    <span class="form-error">Error, incorrect input. Please try again!</span>
                 </form>
             </div>
         </div>
     </footer>
+
+    <div class="popup__container subscribe-popup">
+        <button class="popup__close">x</button>
+        <div class="popup__content">
+            <div class="popup__text">
+                Thank you for registering, you will receive the latest and most important information.
+                And be the first to know about promotions and discounts.
+            </div>
+        </div>
+    </div>
 
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 

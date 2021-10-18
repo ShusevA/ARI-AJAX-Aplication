@@ -1,6 +1,6 @@
+
 document.addEventListener("DOMContentLoaded", function () {
     var lazyImages = [].slice.call(document.querySelectorAll(".lazy"));
-
     if ("IntersectionObserver" in window) {
         let lazyImageObserver = new IntersectionObserver(function (entries, observer) {
             entries.forEach(function (entry) {
@@ -18,12 +18,36 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             });
         });
-
         lazyImages.forEach(function (lazyImage) {
             lazyImageObserver.observe(lazyImage);
         });
     }
 });
+
+document.addEventListener("click", function (e) {
+    let targetElement = e.target;
+    if (targetElement.classList.contains("submit")) {
+        e.preventDefault();
+        let showError = document.querySelector(".form-error");
+        let form = document.forms.subscribe;
+        let inputText = form.elements.inputForm;
+        if (!inputText.value.match(/.+@.+\../i)) {
+            showError.classList.add("show");
+        } else {
+            showError.classList.remove("show");
+            let showPopup = document.querySelector(".popup__container");
+            setTimeout(function () {
+                showPopup.style.display = "none";
+                inputText.value = "";
+            }, 7000)
+            showPopup.style.display = "block";
+        }
+    }
+    if (targetElement.classList.contains("popup__close")) {
+        document.querySelector(".popup__container").style.display = "none"
+    }
+
+})
 
 function showVisible() {
     if (window.pageYOffset >= sticky) {
@@ -56,8 +80,8 @@ function fileText(elem) {
 }
 
 $(document).ready(function () {
-    let vot = $(".contaner").width() + 17;
-    if (vot <= 1024) {
+    let z = $(".contaner").width() + 17;
+    if (z <= 1024) {
         $('.choice').on('click', function () {
             this.classList.toggle("active");
             const panel = this.nextElementSibling;
@@ -165,7 +189,7 @@ $(document).ready(function () {
     $(".button[data-toggle]").on("click", function () {
         this.nextElementSibling.classList.toggle("active");
         if ($(".dropdown-menu").hasClass("active")) {
-            $(this).css("background-color", "white");
+            $(this).css("background-color", "#E89F71");
         } else {
             $(this).css("background-color", "");
         }

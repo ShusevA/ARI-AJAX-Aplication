@@ -1,0 +1,56 @@
+body {
+    font-family: "Gilroy", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: $size-base;
+    line-height: 150%;    
+    background-color: $colorWhite-effect;
+    color: $colotGray-text;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+hr {
+    max-width: 1273px;
+    margin-top: 44px;
+    margin-bottom: 31px;
+}
+
+.headlines {
+    color: $colorDark-header;
+    font-weight: bold;
+    font-size: $size-header;
+    line-height: 120%;    
+}
+
+.description-text {
+    font-weight: 500;
+}
+
+.important-text {
+    color: $colorDark-header;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.btn-hover {
+    transition: all .3s ease;
+    
+    &:focus {
+        border: none;
+        outline: none;
+        box-shadow: 0 0 8px $colorDark-header;
+    }
+    @media (any-hover: hover) {
+        &:hover {
+            box-shadow: 0 0 8px $colorDark-header;
+        }
+    }
+
+}

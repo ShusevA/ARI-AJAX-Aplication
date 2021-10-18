@@ -1,0 +1,30 @@
+@mixin effect-text {
+    color: $colorWhite-effect;
+    font-family: "Gilroy", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $size-base;
+    line-height: 150%;    
+}
+
+@mixin regular-text {
+    color: $colotGray-text;
+    font-family: "Gilroy", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: $size-date;
+    line-height: 150%;
+}
+
+@mixin gilroy-text {
+    color: $colorDark-header;
+    font-family: "Gilroy", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $size-base;
+    line-height: 150%;    
+}
+
+@mixin adaptive ($name, $max-size, $min-size, ) {
+    #{$name}: calc( (100vw - 320px)/(1300 - 320) * (#{$max-size} - #{$min-size}) + #{$min-size}px);  
+}

@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'icons';
+    font-display: swap;
+    src:  url('../fonts/icons.eot?xnvb71');
+    src:  url('../fonts/icons.eot?xnvb71#iefix') format('embedded-opentype'),
+      url('../fonts/icons.ttf?xnvb71') format('truetype'),
+      url('../fonts/icons.woff?xnvb71') format('woff'),
+      url('../fonts/icons.svg?xnvb71#icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+%ico {
+    font-family: 'icons';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+  
+[class^="_icon-"],
+[class*=" _icon-"] {
+    &::before {
+        @extend %ico;
+    } 
+}
+
+._icon-share:before {
+    content: "\e901";
+}
+._icon-cart:before {
+    content: "\e904";
+}
+._icon-send:before {
+    content: "\e905";
+    color: #fff;
+}
+._icon-roward:before {
+    content: "\e906";
+}
+._icon-verifiend:before {
+    content: "\e907";
+}
+._icon-heart:before {
+    content: "\e908";
+}
+._icon-heartblack:before {
+    content: "\e909";
+}
+._icon-delivery:before {
+    content: "\e90a";
+}
+._icon-tel:before {
+    content: "\e90b";
+}
+._icon-address:before {
+    content: "\e90c";
+}
+._icon-line:before {
+    content: "\e90d";
+}
+._icon-arrowprev:before {
+    content: "\e900";
+}
+._icon-arrownext:before {
+    content: "\e90e";
+}
+._icon-support:before {
+    content: "\e90f";
+} 

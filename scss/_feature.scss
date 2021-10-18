@@ -1,0 +1,37 @@
+.feature {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 30px 15px 40px;
+
+    @media only screen and (min-width: 450px) {
+        padding: 66px 15px 88px;
+    }
+
+    @media only screen and (min-width: 992px) {
+        justify-content: space-between;
+    }
+
+    i {
+        font-size: 44px;
+        color: $colorDark-header;
+        left: 24px;
+        position: absolute;
+        top: 22px;
+    } 
+
+    .offer {
+        position: relative;
+        padding: 16px 0 16px 86px;
+        
+        .important-text {
+            margin-bottom: 2px;
+            text-align: left;
+        }
+    }
+    
+}
+
+

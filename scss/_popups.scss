@@ -1,0 +1,43 @@
+.popup {
+
+    &__container {
+    display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, .8);
+        width: 70%;
+        height: 60%;
+        z-index: 5;
+    }
+
+    &__close {
+        @include gilroy-text;
+        font-size: 40px;
+        line-height: 1;
+        margin: 10px 0 0 10px;
+        cursor: pointer;
+    }
+
+    &__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        width: 65%;
+        height: 60%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__text {
+        @include gilroy-text;
+        @include adaptive(font-size, 24, 14);
+        text-align: center;  
+    }
+}
+
+
+
